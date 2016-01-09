@@ -68,8 +68,12 @@
 
 <script type="text/javascript">
 	var timespan = countdown(new Date("March 19, 2016 06:00:00"), function(ts) {
-	document.getElementById("count").textContent = ts.days + ":" + ts.hours + ":" + ts.minutes + ":" + ts.seconds;
+	document.getElementById("count").textContent = padDigits(ts.days, 2) + ":" + padDigits(ts.hours, 2) + ":" + padDigits(ts.minutes, 2) + ":" + padDigits(ts.seconds, 2);
 }, countdown.DAYS | countdown.HOURS|countdown.MINUTES|countdown.SECONDS|countdown.MILLISECONDS);
+
+function padDigits(number, digits) {
+    return Array(Math.max(digits - String(number).length + 1, 0)).join(0) + number;
+}
 
 
 setInterval(function() {
