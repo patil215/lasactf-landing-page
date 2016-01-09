@@ -73,7 +73,7 @@ html {
 p {
 	-webkit-font-smoothing: antialiased;
 	font-family: "Inconsolata";
-  font-size: 16px;
+  /*font-size: 16px;*/
   padding: 0px;
   margin: 0px;
 }
