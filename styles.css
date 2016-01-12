@@ -78,7 +78,7 @@ p {
   margin: 0px;
 }
 
-p > a, p > a:hover, p > a:focus {
+h2 > a, h2 > a:hover, h2 > a:focus, p > a, p > a:hover, p > a:focus {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: underline;
 }
